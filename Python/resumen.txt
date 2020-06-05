@@ -206,3 +206,55 @@ METODOS:
 	print(len(midiccionario)) #IMprime la longitud del DIccionario
 
 
+*************** CONDICIONAL IF, if-else, if-elif-else  *******************
+Esta condicion permite cambiar el flujo del programa, en base a unas
+condiciones.
+ES MUY IMPORTANTE USAR LA TABULACION (INDENTACION) PARA QUE FUNCIONE
+
+SINTAXIS:
+	if condicion :
+		instrucciones
+	else:
+		instrucciones
+	.
+	.
+	.
+EJEMPLO:
+
+	edad=int(input("Ingrese su edad: ")) #Uso int, porque por defecto
+					     #input() lee datos STR y hay que convertirlo a int
+	if edad<18:
+		print("Usted es menor de edad")
+	else:
+		print("Usted es mayor de edad")
+
+AMBITO DE PROGRAMACION:
+	EL ambito de prgramacion nos determina en donde funcionan las
+	variables de programacion, osea que una variable que cree
+	dentro de un metodo, if o bucle SOLO VA A FUNCIONAR DENTRO
+	DE ESE BLOQUE, fuera de eso esa variable ya no va a funcionar
+
+
+EJEMPLO2: 
+
+	nota=int(input("Ingrese su nota: ")) #Uso int, porque por def$
+                                         #input() lee datos STR y$
+        if nota<5:
+                print("Pesimo")
+        elif 5<=nota<8:
+                print("raspado")
+	else:
+		print("Muy bien")
+
+
+******************** CONCATENAR  ***********************
+EDAD=int(input("INgrese su edad: ")
+
+print("Su edad es igual a: " + str(EDAD))
+
+
+
+
+
+
+
