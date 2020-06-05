@@ -144,3 +144,65 @@ SUMA DE LISTAS (Concatenar):
 MULTIPLICAR LISTAS
 	milista1=[...]*3
 	print(milista1[:]) 	#Imprime 3 veces la misma lista
+
+*************************** TUPLAS ************************
+Las tuplas son parecidas a las listas. Utiliza parentesis y 
+pueden contener cualquier tipo de dato dentro.
+-Son listas que NO se pueden modificar DE NINGUNA MANERA
+-Si podemos extraer los valores que estan dentro de la tupla.
+
+Ventajas:
+-Es rapida a la hora de usarla
+-Ocupa menos espacio de memoria
+-Se puede buscar elementos de la tupla con index, asi como las listas
+-Se puede usar como clave de un diccionario.
+
+SINTAXIS:
+	nombre_tupla=(elem1,elem2,elem3....) #Las posiciones van de 0-(n-1)
+
+Ejemplo: 
+	mitupla=("Sergio",123,true,10.25,"hola")
+	print(mitupla[1])	#IMprime la posicion 1 de la tupla
+
+COnvertir tupla a lista ó viseversa
+	milista=list(mitupla)
+	mitupla2=tuple(milista)
+
+VERIFICAR SI EXISTE UN DATO EN LA TUPLA
+	print("Sergio" in mitupla)
+CUANTOS ELEMENTOS HAY EN LA TUPLA
+	print(mitupla.count(123)) #Muestra cuantas veces esta 13 en la tupla
+LONGITUD de la tupla
+	print(len(mitupla))
+
+
+****************** DICCIONARIOS ***************************
+
+SOn estructuras de datos como las listas, 
+pero se hace una asociacion de tipo "CLAVE:VALOR"
+Esto significa que a cada valor se le asigna una clave única
+y podemos meter diccionarios dentro de diccionarios.
+
+SINTAXIS:
+	midiccionario={"CLAVE1":"Valor1","valor2",..", 
+			"CLAVE2":"Valor1","Valor2"}
+MOSTRAR DATOS DE DEL DICCIONARIO
+	print(midiccionario(CLAVE))
+
+MODIFICAR DICCIONARIO
+	
+	midiccionario["CLAVE1"]="Valor5"
+ELIMINAR ELEMENTO
+	del midiccionario["CLAVE1"]
+
+EJEMPLO:
+
+	mitupla=("España","Francia","UK","Alemania")
+	midiccionario={mitupla[0]:"Madrid", mitupla[1]:"Paris"....}
+
+METODOS:
+	print(midiccionario.keys()) #Imprime las claves del dicci.
+	print(midiccionario.values()) #Imprime los valores de las claves
+	print(len(midiccionario)) #IMprime la longitud del DIccionario
+
+
